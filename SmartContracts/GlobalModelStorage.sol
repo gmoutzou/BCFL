@@ -46,7 +46,7 @@ contract GlobalModelStorage {
     }
 
     // each client locally takes one step of gradient descent 
-    // on the current model using its local data 
+    // on the current model using his local data
     // and uploads the results
     // if he is the last one, picks up an aggregator
     function uploadClientParameters(bytes32[] memory k_params) public {
